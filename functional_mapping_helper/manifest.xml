@@ -1,0 +1,23 @@
+<package>
+  <description brief="functional_mapping_helper">
+
+     functional_mapping_helper
+
+  </description>
+  <author>robot</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/functional_mapping_helper</url>
+  <depend package="bullet"/>
+  <depend package="geometry_msgs"/>
+  <depend package="eu_nifti_env"/>
+
+<export>
+       <cpp cflags="-I${prefix}/include"
+            lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib
+-lfunctionalMappingHelper"/>
+    </export>
+
+</package>
+
+
